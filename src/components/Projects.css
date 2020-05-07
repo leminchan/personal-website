@@ -1,0 +1,43 @@
+#projects {
+    width: 100%;
+    /* margin: auto; */
+    /* margin-bottom: 100px */
+}
+
+
+
+.project-content {
+    /* font-family: CircularStd; */
+    font-weight: 300;
+}
+
+.project-title {
+    padding-left: 0px;
+    margin-left: 0px;
+    /* padding-bottom: 1.5rem; */
+}
+
+.project-example {
+    width: 100%;
+    margin-left: auto;
+    color: black;
+}
+
+.project-example:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,59 @@
+#about {
+    height: 60vh;
+    min-height: 650px;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.about-section {
+    display : flex!important;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    /* font-family: CircularStd; */
+    font-size: 28pt;
+    font-weight: 700;
+    line-height: 1.25;
+    /* src: local('Roboto'), url(../fonts/Roboto-Black.ttf) format('ttf'); */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.about-title {
+    margin-bottom: .5rem;
+    /* font-weight: 700; */
+    /* font-size: 40px; */
+}
+
+.about-subtitle {
+    font-size: 14pt;
+    font-weight: 300;
+    margin-bottom: .5rem
+}
+
+.about-profile-pic {
+  /* flex: 1; */
+  /* display: flex; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%;
+  height: auto;
+  float: right;
+
+}
+
+
+.github-logo:hover {
+    cursor: pointer;
+}
+
+.linkedin-logo {
+    margin-left: 15px;
+    max-width: 36px;
+}
+
+.linkedin-logo:hover {
+    cursor: pointer;
+}
