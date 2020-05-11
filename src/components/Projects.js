@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { Row, Col, Card } from "react-bootstrap";
+import { withTheme } from "styled-components";
 
 // import project0 from "../images/nnn.png";
 
@@ -14,10 +15,11 @@ class Projects extends Component {
                     <h2 className="project-title">Featured Projects</h2>
                     <br />
                     <Row>
-                        <Col xs={12} sm={12} md={12}>
+                        <Col xs={12} sm={12} md={12} style={{}}>
                             <a className="project-example" href="https://github.com/leminchan/No-Noise-Nonsense" target="_blank" rel="noopener noreferrer">
                                 <Card style={{flex: 1, display: 'flex', width : '100%'}}
-                                    bg="light">
+                                    bg={this.props.theme.mode === 'dark' ? 'dark' : 'light'} 
+                                    text={this.props.theme.mode === 'dark' ? 'light' : 'dark'}>
                                     <Card.Body>
                                         <Card.Title>No Noise Nonsense</Card.Title>
                                         <Card.Text>
@@ -41,7 +43,8 @@ class Projects extends Component {
                         <Col>
                             <a className="project-example" href="https://github.com/leminchan/pdf-master" target="_blank" rel="noopener noreferrer">
                                     <Card style={{flex: 1, display: 'flex', width : '100%'}}
-                                        bg="light">
+                                          bg={this.props.theme.mode === 'dark' ? 'dark' : 'light'} 
+                                          text={this.props.theme.mode === 'dark' ? 'light' : 'dark'} >
                                         <Card.Body>
                                             <Card.Title>PDF Master</Card.Title>
                                             <Card.Text>
@@ -61,7 +64,8 @@ class Projects extends Component {
                         <Col>
                             <a className="project-example" href="https://github.com/hummuswins/ZotReq" target="_blank" rel="noopener noreferrer">
                                     <Card style={{flex: 1, display: 'flex', width : '100%'}}
-                                        bg="light">
+                                           bg={this.props.theme.mode === 'dark' ? 'dark' : 'light'} 
+                                           text={this.props.theme.mode === 'dark' ? 'light' : 'dark'}>
                                         <Card.Body>
                                             <Card.Title>Zotreqs</Card.Title>
                                             <Card.Text>
@@ -85,7 +89,8 @@ class Projects extends Component {
                         <Col>
                             <a className="project-example" href="https://github.com/leminchan/No-Noise-Nonsense" target="_blank" rel="noopener noreferrer">
                                     <Card style={{flex: 1, display: 'flex', width : '100%'}}
-                                        bg="light">
+                                          bg={this.props.theme.mode === 'dark' ? 'dark' : 'light'} 
+                                          text={this.props.theme.mode === 'dark' ? 'light' : 'dark'}>
                                         <Card.Body>
                                             <Card.Title>Medicheck</Card.Title>
                                             <Card.Text>
@@ -114,4 +119,4 @@ class Projects extends Component {
     }
 }
 
-export default Projects;
+export default withTheme(Projects);

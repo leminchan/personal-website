@@ -1,10 +1,12 @@
 import React, {Component} from "react";
 import {Row, Col, Image} from "react-bootstrap";
+import {withTheme} from "styled-components";
 
 import "./About.css";
 import selfImage from "../images/me.jpg";
-import githubLogo from "../images/GitHub-Mark-32px.png";
-import linkedinLogo from "../images/LI-In-Bug.png";
+import githubLogo from "../images/github-light.png";
+import darkGithubLogo from "../images/github-dark.png";
+import linkedinLogo from "../images/li-white.png";
 
 
 class About extends Component {
@@ -12,7 +14,7 @@ class About extends Component {
     render() {
         return(
             <Row className="about-section" id="about">
-                <Col xs={12} sm={6} className="about-content">
+                <Col className="about-content">
                     <div class="about-title">
                     Hi, I'm Mit - a computer science student at UC Irvine.
                     </div>
@@ -23,7 +25,7 @@ class About extends Component {
                     </p>
                     <a href="https://github.com/leminchan" target="_blank" rel="noopener noreferrer">
                         <Image className="github-logo"
-                            src={githubLogo} rounded fluid/>
+                            src={this.props.theme.mode ==='dark' ? darkGithubLogo : githubLogo} rounded fluid/>
                     </a>
                     <a href="https://www.linkedin.com/in/mit-chan/" target="_blank" rel="noopener noreferrer">
                         <Image className="linkedin-logo"
@@ -31,7 +33,7 @@ class About extends Component {
                     </a>
                 </Col>
 
-                <Col>
+                <Col style={{paddingRight:"0"}}>
                     <Image className="about-profile-pic"
                         src={selfImage} rounded fluid/>
                 </Col>
@@ -41,4 +43,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withTheme(About);

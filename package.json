@@ -1,20 +1,25 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "personal-website",
+  "version": "0.2.0",
   "private": true,
-  "homepage": "http://leminchan.github.io/personal-website",
+  "homepage": "https://leminchan.github.io",
   "dependencies": {
+    "@material-ui/core": "^4.9.13",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "circular-std": "^1.0.4",
+    "jquery": "^3.5.1",
+    "local-storage-fallback": "^4.1.1",
+    "popper": "^1.0.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
+    "styled-theming": "^2.2.0",
     "yarn": "^1.22.4"
   },
   "scripts": {
@@ -41,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "styled-components": "^5.1.0"
   }
 }

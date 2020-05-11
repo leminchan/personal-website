@@ -1,32 +1,51 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Container } from "react-bootstrap";
+import { ThemeProvider } from 'styled-components';
 
 import './App.css';
-import './components/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import GlobalStyles from "./Global";
+import useTheme from "./components/useTheme";
 import CustomNavbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import CustomFooter from "./components/CustomFooter";
 
-class App extends Component {
-  render() {
+
+// class App extends Component {
+  
+  //   constructor(props) {
+    //     super(props);
+    //     this.state = { isDarkMode: false }
+    //     this.toggleDarkMode = this.toggleDarkMode.bind(this);
+    //   };
+    
+    //   toggleDarkMode = () => {
+      //     this.setState( state => ({ isDarkMode: !state.isDarkMode}));
+      //   };
+      
+      //   render() {
+
+
+function App() {
+
+    const theme = useTheme();
+
     return (
-      <div className="App">
-        <CustomNavbar />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
         <Container className="page-container">
+          <CustomNavbar toggleClick = {e => 
+            theme.setTheme(theme.mode === 'dark' 
+              ? { mode : 'light'} 
+              : { mode :'dark'})} />
           <About />
           <Projects /> 
           {/* <CustomFooter /> */}
         </Container>
-        
-
-        {/* <Footer /> */}
-      </div>
+      </ThemeProvider>
+      
     );
-  }
 
 }
 

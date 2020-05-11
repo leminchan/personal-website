@@ -2,6 +2,7 @@
     height: 60vh;
     min-height: 650px;
     width: 100%;
+    transition: all 0.15s linear;
     /* margin: auto; */
 }
 
@@ -9,20 +10,25 @@
     display : flex!important;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .about-content {
-    /* font-family: CircularStd; */
+    padding-left: 0px;
     font-size: 28pt;
     font-weight: 700;
     line-height: 1.25;
+    /* padding-right: 0px; */
     /* src: local('Roboto'), url(../fonts/Roboto-Black.ttf) format('ttf'); */
-    padding-left: 0px;
-    padding-right: 0px;
+    /* font-family: CircularStd; */
 }
 
 .about-title {
     margin-bottom: .5rem;
+    line-height: 1.20;
+    /* color: black; */
+    /* line-height: 1.1; */
     /* font-weight: 700; */
     /* font-size: 40px; */
 }
@@ -30,20 +36,31 @@
 .about-subtitle {
     font-size: 14pt;
     font-weight: 300;
+    /* color:black; */
     margin-bottom: .5rem
 }
 
 .about-profile-pic {
-  /* flex: 1; */
-  /* display: flex; */
+
+  flex: 1;
+  display: flex;
+  width: 454px;
+  height: 605px;
   padding-top: 50px;
   padding-bottom: 50px;
+  /* padding-right: 0px; */
   max-width: 100%;
+  max-height: 100%;
   height: auto;
   float: right;
+  /* position: absolute; */
+  overflow: hidden;
 
 }
 
+.github-logo {
+    max-width: 32px;
+}
 
 .github-logo:hover {
     cursor: pointer;

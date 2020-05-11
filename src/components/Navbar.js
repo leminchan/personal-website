@@ -1,7 +1,12 @@
 import React, {Component} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Navbar, Nav } from "react-bootstrap";
+import { withTheme } from "styled-components";
+import CustomSwitch from "./CustomSwitch";
+
+import './Navbar.css';
 import resumePDF from "../Chan_Lemin_Mit_Resume.pdf";
+
 
 class CustomNavbar extends Component {
 
@@ -14,17 +19,21 @@ class CustomNavbar extends Component {
         scroll.scrollToTop();
     }
 
-   
     render() {
         return (
-            <Navbar fixed='top' bg='dark' variant='dark' sticky='top'>
-                <div className="navbar-logo" onClick={this.scrollToTop}>
-                    <Navbar.Brand>mit chan</Navbar.Brand>
-                </div>
+
+            <Navbar className="nav" 
+                    fixed='top' sticky='top'
+                    bg={this.props.theme.mode === 'dark' ? 'black' : 'light'}
+                    >
+                <Navbar.Brand className="nav-logo"
+                        onClick={this.scrollToTop}>
+                Mit Chan
+                </Navbar.Brand>
 
                 <Nav className="ml-auto">
-                    <Nav.Link>
-                        <Link className="nav.item"
+                    <Nav.Link className="nav-item">
+                        <Link
                             activeClass="active"
                             to="about"
                             spy={true}
@@ -35,8 +44,8 @@ class CustomNavbar extends Component {
                         </Link>
                     </Nav.Link>
 
-                    <Nav.Link>
-                        <Link className="nav.item"
+                    <Nav.Link className="nav-item">
+                        <Link
                             activeClass="active"
                             to="projects"
                             spy={true}
@@ -47,7 +56,20 @@ class CustomNavbar extends Component {
                         </Link>
                     </Nav.Link>
 
-                    <Nav.Link href={resumePDF}>Resume</Nav.Link>
+                    <Nav.Link className="nav-item"
+                        href={resumePDF} target="_blank">Resume</Nav.Link>
+
+                    {/* <Nav.Link className="moon"> */}
+                      {/* <Image className="moon-img"
+                        src={this.props.theme.mode === 'dark' ? darkMoonLogo : lightMoonLogo } 
+                        rounded fluid/> */}
+                    {/* </Nav.Link> */}
+
+                    {/* <Nav.Link> */}
+                      <CustomSwitch 
+                        toggleClick={this.props.toggleClick}>
+                      </CustomSwitch>
+                    {/* </Nav.Link> */}
                 </Nav>
             </Navbar>
 
@@ -119,4 +141,4 @@ class CustomNavbar extends Component {
 //     }
 // }
 
-export default CustomNavbar;
+export default withTheme(CustomNavbar);
