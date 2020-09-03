@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.510d3a40.chunk.css",
-    "main.js": "/personal-website/static/js/main.560984b5.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.560984b5.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.d49f66af.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.d49f66af.js.map",
-    "static/css/2.69121389.chunk.css": "/personal-website/static/css/2.69121389.chunk.css",
-    "static/js/2.ba99d108.chunk.js": "/personal-website/static/js/2.ba99d108.chunk.js",
-    "static/js/2.ba99d108.chunk.js.map": "/personal-website/static/js/2.ba99d108.chunk.js.map",
-    "index.html": "/personal-website/index.html",
-    "precache-manifest.3058e514be0812bf1246aac05dbe97b3.js": "/personal-website/precache-manifest.3058e514be0812bf1246aac05dbe97b3.js",
-    "service-worker.js": "/personal-website/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/personal-website/static/css/2.69121389.chunk.css.map",
-    "static/css/main.510d3a40.chunk.css.map": "/personal-website/static/css/main.510d3a40.chunk.css.map",
-    "static/js/2.ba99d108.chunk.js.LICENSE.txt": "/personal-website/static/js/2.ba99d108.chunk.js.LICENSE.txt",
-    "static/media/Chan_Lemin_Mit_Resume.pdf": "/personal-website/static/media/Chan_Lemin_Mit_Resume.b5b4bc83.pdf",
-    "static/media/me.jpg": "/personal-website/static/media/me.2cdf7691.jpg",
-    "static/media/moon-dark.png": "/personal-website/static/media/moon-dark.c080db21.png",
-    "static/media/moon-light.png": "/personal-website/static/media/moon-light.3398019c.png"
+    "main.css": "./static/css/main.8ed9cf55.chunk.css",
+    "main.js": "./static/js/main.8cd10160.chunk.js",
+    "main.js.map": "./static/js/main.8cd10160.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.451dee1f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.451dee1f.js.map",
+    "static/css/2.d54261e7.chunk.css": "./static/css/2.d54261e7.chunk.css",
+    "static/js/2.681ad546.chunk.js": "./static/js/2.681ad546.chunk.js",
+    "static/js/2.681ad546.chunk.js.map": "./static/js/2.681ad546.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.28566bdb035ad1c785cd810a63ec29ba.js": "./precache-manifest.28566bdb035ad1c785cd810a63ec29ba.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.d54261e7.chunk.css.map": "./static/css/2.d54261e7.chunk.css.map",
+    "static/css/main.8ed9cf55.chunk.css.map": "./static/css/main.8ed9cf55.chunk.css.map",
+    "static/js/2.681ad546.chunk.js.LICENSE.txt": "./static/js/2.681ad546.chunk.js.LICENSE.txt",
+    "static/media/Chan_Lemin_Mit_Resume.pdf": "./static/media/Chan_Lemin_Mit_Resume.b5b4bc83.pdf",
+    "static/media/me.jpg": "./static/media/me.2cdf7691.jpg",
+    "static/media/moon-dark.png": "./static/media/moon-dark.c080db21.png",
+    "static/media/moon-light.png": "./static/media/moon-light.3398019c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d49f66af.js",
-    "static/css/2.69121389.chunk.css",
-    "static/js/2.ba99d108.chunk.js",
-    "static/css/main.510d3a40.chunk.css",
-    "static/js/main.560984b5.chunk.js"
+    "static/js/runtime-main.451dee1f.js",
+    "static/css/2.d54261e7.chunk.css",
+    "static/js/2.681ad546.chunk.js",
+    "static/css/main.8ed9cf55.chunk.css",
+    "static/js/main.8cd10160.chunk.js"
   ]
 }
