@@ -1,0 +1,35 @@
+#navbar {
+    height: 70px;
+    padding: 0rem 0rem;
+  
+    /* Transition for Dark -> Light Mode, vice versa */
+    -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    // Inherit theme colors
+    .nav-logo { 
+        color: inherit !important; 
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav-item { 
+        color: inherit !important; 
+
+        a:hover { border-bottom: 1px solid; }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .active { 
+            color: inherit;
+            border-bottom: 1px solid;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+#projects {
+    margin-bottom: 2rem;
+    -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    .project-content {
+        font-weight: 300;
+        padding-left: 15px;
+    }
+    
+    .project-title {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        // margin: 10px 0px 40px;
+        margin-bottom: 2rem;
+        width: 100%;
+        white-space: nowrap;
+        font-size: 32px;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 80%;
+            position: relative;
+            margin: 0rem 2rem;
+        }
+    }
+
+    .project-example {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        a:hover { 
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    
+    .card {
+        -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    }
+    
+    .chip {
+        /* font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace; */
+        color: rgba(0,0,0,0.6);
+        /* color: #115293; */
+        display: inline-block;
+        height: 32px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 32px;
+        padding: 0 12px;
+        border-radius: 16px;
+        background-color: #e4e4e4;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .bg-dark {
+        background-color:#1c1c1c !important;
+    }
+}
+
+

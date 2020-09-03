@@ -1,0 +1,63 @@
+#about {
+    padding: 2rem 0rem;
+    // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+
+
+    .about-title {
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+        }
+
+        p { 
+            color: #115293;
+            letter-spacing: 2px;
+            // font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+            // margin-bottom: .25rem;
+        }
+    }
+
+    .about-subtitle {
+        p {
+        font-size: 14pt;
+        font-weight: 300;
+        margin-bottom: 1rem
+        }
+    }
+
+    .github-logo {
+        max-width: 32px;
+    
+        -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+        &:hover { cursor: pointer; }
+    }
+    
+    .linkedin-logo {
+        margin-left: 15px;
+        max-width: 36px;
+    
+        &:hover { cursor: pointer; }
+    }
+
+    .about-profile-pic {
+        padding: 2rem 0rem;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+

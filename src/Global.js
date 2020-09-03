@@ -11,17 +11,11 @@ const getForeground = style('mode', {
     dark: '#ffffff'
 });
 
-const getCardTitle = style('mode', {
-    // light: '#ffffff !important',
-    light: 'red !important',
-    dark: 'blue !important',
-    //  dark: 'rgba(255, 255, 255, 0.7) !important',
+const getOpacity = style('mode', {
+    light : '100%',
+    dark : '60%'
 });
 
-const getCardText = style('mode', {
-    light: '#121212',
-    dark: 'rgba(255, 255, 255, 0.7) !important',
-});
 
 const GlobalStyles = createGlobalStyle`
 body {
@@ -33,10 +27,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: ${getBackground};
   color: ${getForeground};
-  card-text: ${getCardText};
-  card-title: ${getCardTitle};
-  basedgod.color: ${getCardTitle};
-  transition: all 0.15s linear;
+
+  // Transitions
+  -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+// Overwriting Bootstrap
+.navbar {
+    background-color: ${getBackground};
+    color: ${getForeground};
+}
+
+// Secondary Theming
+.alt-text {
+    color: #115293;
+    opacity: ${getOpacity};
+    -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.experience-title:after, .project-title:after {
+    background-color: #115293;
+    opacity: ${getOpacity};
 }
 `;
 

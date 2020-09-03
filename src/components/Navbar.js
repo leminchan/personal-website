@@ -4,7 +4,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { withTheme } from "styled-components";
 import CustomSwitch from "./CustomSwitch";
 
-import './Navbar.css';
+import './Navbar.scss';
 import resumePDF from "../Chan_Lemin_Mit_Resume.pdf";
 
 
@@ -22,12 +22,8 @@ class CustomNavbar extends Component {
     render() {
         return (
 
-            <Navbar className="nav" 
-                    fixed='top' sticky='top'
-                    bg={this.props.theme.mode === 'dark' ? 'black' : 'light'}
-                    >
-                <Navbar.Brand className="nav-logo"
-                        onClick={this.scrollToTop}>
+            <Navbar id="navbar" sticky='top'>
+                <Navbar.Brand className="nav-logo" onClick={this.scrollToTop}>
                 Mit Chan
                 </Navbar.Brand>
 
@@ -47,6 +43,18 @@ class CustomNavbar extends Component {
                     <Nav.Link className="nav-item">
                         <Link
                             activeClass="active"
+                            to="experience"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}>
+                        Experience
+                        </Link>
+                    </Nav.Link>
+
+                    <Nav.Link className="nav-item">
+                        <Link
+                            activeClass="active"
                             to="projects"
                             spy={true}
                             smooth={true}
@@ -59,17 +67,9 @@ class CustomNavbar extends Component {
                     <Nav.Link className="nav-item"
                         href={resumePDF} target="_blank">Resume</Nav.Link>
 
-                    {/* <Nav.Link className="moon"> */}
-                      {/* <Image className="moon-img"
-                        src={this.props.theme.mode === 'dark' ? darkMoonLogo : lightMoonLogo } 
-                        rounded fluid/> */}
-                    {/* </Nav.Link> */}
-
-                    {/* <Nav.Link> */}
                       <CustomSwitch 
                         toggleClick={this.props.toggleClick}>
                       </CustomSwitch>
-                    {/* </Nav.Link> */}
                 </Nav>
             </Navbar>
 

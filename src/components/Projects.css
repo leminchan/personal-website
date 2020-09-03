@@ -1,15 +1,8 @@
 #projects {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
     transition: all 0.15s linear;
     /* padding-left: 0px !important; */
     /* margin: auto; */
     /* margin-bottom: 100px */
-}
-
-.project-section {
-    padding-left: 0px !important;
 }
 
 .project-content {
@@ -39,11 +32,13 @@
 }
 
 .chip {
+    /* font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace; */
+    color: rgba(0,0,0,0.6);
+    /* color: #115293; */
     display: inline-block;
     height: 32px;
     font-size: 13px;
     font-weight: 500;
-    color: rgba(0,0,0,0.6);
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
@@ -53,5 +48,5 @@
 }
 
 .bg-dark {
-    background-color: rgba(44,44,44) !important;
+    background-color:#1c1c1c !important;
 }

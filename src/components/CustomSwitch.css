@@ -6,7 +6,6 @@
   .moon-img {
     height : 24px;
     width: 24px;
-    /* padding-right: -0px; */
     transition: all 2s linear;
     display: flex;
     flex: 1;

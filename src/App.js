@@ -10,22 +10,7 @@ import useTheme from "./components/useTheme";
 import CustomNavbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-
-
-// class App extends Component {
-  
-  //   constructor(props) {
-    //     super(props);
-    //     this.state = { isDarkMode: false }
-    //     this.toggleDarkMode = this.toggleDarkMode.bind(this);
-    //   };
-    
-    //   toggleDarkMode = () => {
-      //     this.setState( state => ({ isDarkMode: !state.isDarkMode}));
-      //   };
-      
-      //   render() {
-
+import Experience from "./components/Experience";
 
 function App() {
 
@@ -34,12 +19,13 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Container className="page-container">
+        <Container className="home">
           <CustomNavbar toggleClick = {e => 
             theme.setTheme(theme.mode === 'dark' 
               ? { mode : 'light'} 
               : { mode :'dark'})} />
           <About />
+          <Experience />
           <Projects /> 
           {/* <CustomFooter /> */}
         </Container>
